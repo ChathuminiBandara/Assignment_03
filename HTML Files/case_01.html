@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case 01</title>
+    <link rel="stylesheet" href="normalize.css" >
+
+    <style>
+
+        section>div{
+            height: 50vh;
+            width: 50vw;
+            position: relative;
+        }
+
+        section>div:first-child{
+            background-color: red;
+        }
+        section>div:nth-child(2){
+            background-color: blue;
+            top: 0;
+            right: 0;
+            position: absolute;
+        }
+        section>div:nth-child(3){
+            background-color: green;
+        }
+        section>div:nth-child(4){
+            bottom: 0;
+            right: 0;
+            background-color: darkslateblue;
+
+            position: absolute;
+        }
+
+        #middle-square{
+            height: 20vh;
+            aspect-ratio: 1/1;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        #middle-circle{
+            height: 15vh;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        section>div>div{
+            height: 20vh;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        section>div>div>div{
+            height: 8vh;
+            aspect-ratio: 1/1;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        main{
+            height: 15vh;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            background-color: white;
+            position: relative;
+        }
+
+        #out-circle-1{
+            width:14vw;
+            aspect-ratio: 1/1;
+            background-color: white;
+            border-radius: 100%;
+            top: 0;
+            /* bottom: 0;*/
+            left: 0;
+            /*  right: 0;*/
+            margin: auto;
+            position: absolute;
+            transform: translate(-50%,-50%);
+        }
+
+        #out-circle-2{
+            width:14vw;
+            aspect-ratio: 1/1;
+            background-color: white;
+            border-radius: 100%;
+            /*top: 0;*/
+            bottom: 0;
+            /*  left: 0;*/
+            right: 0;
+            margin: auto;
+            position: absolute;
+            transform: translate(-650%,50%);
+        }
+
+        #out-circle-3{
+            width:14vw;
+            aspect-ratio: 1/1;
+            background-color: white;
+            border-radius: 100%;
+            /* top: 0;*/
+            bottom: 0;
+            /*left: 0;*/
+            right: 0;
+            margin: auto;
+            position: absolute;
+            transform: translate(50%,50%);
+        }
+
+        #out-circle-4{
+            width:14vw;
+            aspect-ratio: 1/1;
+            background-color: white;
+            border-radius: 100%;
+            top: 0;
+            /*  bottom: 0;*/
+            /*   left: 0;*/
+            right: 0;
+            margin: auto;
+            position: absolute;
+            transform: translate(50%,-50%);
+        }
+
+        #out-circle-up{
+            width:14vw;
+            aspect-ratio: 1/1;
+            background-color: white;
+            border-radius: 100%;
+            top: 0;
+            /* bottom: 0;*/
+            left: 0;
+            right: 0;
+            margin: auto;
+            position: absolute;
+            transform: translate(0%,-50%);
+        }
+
+        #out-circle-down{
+            width:14vw;
+            aspect-ratio: 1/1;
+            background-color: white;
+            border-radius: 100%;
+            /*top: 0;*/
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            position: absolute;
+            transform: translate(0%,50%);
+        }
+
+
+
+        body{
+            background-color: black;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+
+<section>
+    <div>   <div>    <div></div>     </div>     </div>
+    <div>   <div>    <div></div>   </div>     </div>
+    <div>  <div>    <div></div>    </div>    </div>
+    <div>   <div>   <div></div>    </div>    </div>
+
+</section>
+
+<div id="middle-square"></div>
+<div id="middle-circle"></div>
+ <div id="out-circle-1"></div>
+<div id="out-circle-2"></div>
+<div id="out-circle-3"></div>
+<div id="out-circle-4"></div>
+<div id="out-circle-up"></div>
+<div id="out-circle-down"></div>
+</body>
+</html>
